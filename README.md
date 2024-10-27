@@ -46,3 +46,8 @@ Over 2.6 billion individuals worldwide use YouTube monthly, making it one of the
    - Update and refine table schemas based on new insights or changes in the dataset.
 
 This ETL process ensures that raw YouTube data is efficiently extracted, transformed, and loaded into a structured format suitable for analysis. By leveraging AWS tools like Glue, Lambda, and Athena, it allows for scalability and adaptability as data volumes and analysis needs grow.
+### Project  files
+ 1. ```Amazon S3 CLI copy commands``` CLI commnds to Upload youtupe files to S3.
+ 2. ```lambda function``` to convert json file to parquet and save it in s3 .
+ 3.  ```Spark code Glue job``` to clean and wrangelr files before savedSpark code Glue job in s3.
+ 4. ```README.md``` provides discussion on your project.
