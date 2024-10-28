@@ -49,9 +49,9 @@ This ETL process ensures that raw YouTube data is efficiently extracted, transfo
  * Useing aws CLI upload files to s3 (landing area)(commands in Amazon S3 CLI copy commands file)
  * Add a trigger for the Lambda function, such as an S3 upload event
  * lambda function detect new files upload and convert json and csv file to s3(Cleansed/Enriched area) as parquet files partitioned and compressed
- * using glue job join two tables (using athina) and save in reporting area as parqeut file 
- * use Glue crawler to create data catalog(database) for every area (landing area,Cleansed/Enriched area,Reporting area)
- * using Athina you can access (Cleansed/Enriched,Reproting area) s3 for BI solutions like Quicksite .
+ * Using glue job join two tables (using athina) and save in reporting area as parqeut file 
+ * Use Glue crawler to create data catalog(database) for every area (landing area,Cleansed/Enriched area,Reporting area)
+ * Using Athina you can access (Cleansed/Enriched,Reproting area) s3 for BI solutions like Quicksite .
  * You can use AWS CloudWatch Events for scheduling.
  * You can use AWS CloudWatch to monitor pipline
  * Monitor the Glue job logs for errors and successful completion.
