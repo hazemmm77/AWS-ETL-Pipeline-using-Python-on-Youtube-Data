@@ -1,8 +1,6 @@
 # AWS-ETL-Pipeline-using-Python-on-Youtube-Data 
 build ETL Data Pipeline in Python on YouTube Data using Athena, Glue and Lambda.
 Over 2.6 billion individuals worldwide use YouTube monthly, making it one of the top-most visited websites
-# ETL Process for "Build an AWS ETL Data Pipeline in Python on YouTube Data"
-
 ## Architecture Diagram Overview
 - **Data Source**: YouTube data in JSON format is ingested.
 - **Amazon S3**: Acts as the data lake, storing raw JSON files.
@@ -17,6 +15,7 @@ Over 2.6 billion individuals worldwide use YouTube monthly, making it one of the
    - Understand the project scope and goals.
    - Create a new AWS user with appropriate permissions to access S3, Glue, Lambda, and other services.
    - Set up AWS CLI for interacting with AWS services programmatically.
+     
 
 ### 2. Extract Phase
    - **Data Ingestion**: Store YouTube data in JSON format within an Amazon S3 bucket.
@@ -50,4 +49,5 @@ This ETL process ensures that raw YouTube data is efficiently extracted, transfo
  1. ```Amazon S3 CLI copy commands``` CLI commnds to Upload youtupe files to S3.
  2. ```lambda function``` to convert json file to parquet and save it in s3 .
  3.  ```Spark code Glue job``` to clean and wrangelr files before savedSpark code Glue job in s3.
- 4. ```README.md``` provides discussion on your project.
+ 4.  ```Architecture.jpg ``` the Architecture of the project
+ 5. ```README.md``` provides discussion on your project.
